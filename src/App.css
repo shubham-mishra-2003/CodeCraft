@@ -1,0 +1,143 @@
+@import url("https://fonts.googleapis.com/css2?family=Agbalumo&family=Dancing+Script:wght@700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Agbalumo;
+  user-select: none;
+}
+
+body {
+  min-height: 100vh;
+}
+
+header {
+  display: flex;
+  width: 100%;
+  background: #000;
+  color: #fff;
+  padding: 2px;
+  align-items: center;
+  border-bottom: 5px solid #00aff0;
+}
+header img {
+  height: 70px;
+  margin-left: 20px;
+  margin-right: 30px;
+  border-radius: 50%;
+}
+header span {
+  font-size: 2rem;
+}
+.creator {
+  font-size: 20px;
+  margin-left: 20px;
+  color: #00aff0;
+  font-style: oblique;
+  text-decoration: underline;
+  align-self: center;
+}
+
+.inputArea {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  width: 100%;
+  height: 400px;
+  border: 2px solid black;
+}
+
+.input {
+  border: 2px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: grey;
+  width: 100%;
+  height: 100%;
+}
+.head {
+  background-color: black;
+  width: 100%;
+  color: #fff;
+  display: flex;
+  align-items: center;
+}
+.head span {
+  margin: 10px;
+  font-size: 20px;
+  margin-left: 20px;
+}
+#htmlinput {
+  background-image: url(./img/htmlBg.jpeg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#cssinput {
+  background-image: url(./img/cssBg.jpeg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#jsinput {
+  background-image: url(./img/jsBg.jpeg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+textarea {
+  cursor: text;
+  color: #000;
+  border: none;
+  width: 98%;
+  height: 100%;
+  background: transparent;
+  padding-left: 10px;
+  padding-top: 5px;
+  font-size: 1rem;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+textarea::placeholder {
+  color: black;
+}
+
+.outputArea {
+  position: relative;
+  z-index: 100;
+  border: 5px solid black;
+  margin-top: 10px;
+  height: 80vh;
+  background: url(./img/outputBg.jpeg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+iframe {
+  height: 100%;
+  width: 100%;
+  border: none;
+  background: transparent;
+  background-color: rgba(255, 255, 255, 0.75);
+}
+
+@media (max-width: 800px) {
+  .container {
+    flex-direction: column;
+  }
+  .inputArea {
+    flex-direction: column;
+    height: 150vh;
+  }
+  header span {
+    font-size: 1.4rem;
+  }
+  .creator {
+    font-size: 15px;
+  }
+  header img {
+    height: 60px;
+  }
+}

@@ -110,7 +110,6 @@ textarea::placeholder {
   border: 5px solid black;
   margin-top: 10px;
   height: 80vh;
-  background: url(./img/outputBg.jpeg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
